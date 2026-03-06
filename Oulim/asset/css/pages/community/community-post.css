@@ -6,3 +6,16 @@
 .p-community-post{
   display: flex;
 }
+
+.l-community-post-detail{
+  display: flex;
+}
+
+.l-community-post-img-attach{
+  display: flex;
+}
+
+#imageInput{
+  background-color: var(--color-primary);
+  color: #fff;
+}
