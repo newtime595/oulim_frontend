@@ -8,7 +8,6 @@ footer {
 }
 
 .main-container {
-    border: 1px solid black;
     height: 900px;
     display: flex;
     justify-content: center;
@@ -17,9 +16,9 @@ footer {
 }
 
 .main-aside {
-    border: 1px solid red;
+    
     width: 250px;
-    background-color: aqua;
+    background-color: #F0F0F0;
 }
 
 .main-aside-list {
@@ -57,9 +56,8 @@ footer {
 }
 
 .main-2 {
-    border: 1px solid black;
-    background-color: aquamarine;
-    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+    /* background-color: aquamarine; */
     width: 700px;
     justify-content: center;
 }
@@ -79,16 +77,16 @@ footer {
 
 
 .main-pw {
-    background-color: blanchedalmond;
     margin: 5px 40px;
+    
 }
 
 
 
 .c-button-group {
-    background-color: blueviolet;
     display: flex;
     justify-content: center;
+    
 }
 
 .c-button-group>button {
