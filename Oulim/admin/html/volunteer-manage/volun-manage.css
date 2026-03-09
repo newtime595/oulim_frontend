@@ -190,3 +190,9 @@ aside {
 .c-pagination__link{
     cursor:pointer;
 }
+/* 페이지 네이션 중간 정렬 */
+.page{
+
+    justify-items: center;
+    margin: 20px;
+}

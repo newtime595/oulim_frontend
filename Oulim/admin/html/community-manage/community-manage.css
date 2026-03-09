@@ -184,3 +184,10 @@ margin-bottom: 150px;
   grid-template-columns:2cm 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
+
+/* 페이지 네이션 중간 정렬 */
+.page{
+
+    justify-items: center;
+    margin: 20px;
+}

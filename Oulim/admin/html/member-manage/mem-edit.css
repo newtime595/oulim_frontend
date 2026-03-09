@@ -124,15 +124,23 @@ aside {
   margin-bottom: 100px;
 }
 
+
+.userM {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
 /* 메인 영역 */
 
 .l-content {
-  flex: 1;
+
   background: #f0f0f0;
 
   border: 1px solid black;
   display: flex;
-
+  padding: 30px;
 }
 
 
