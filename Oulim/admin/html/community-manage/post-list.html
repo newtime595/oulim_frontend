@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>post-list</title>
   <!-- base css 필수 삽입-->
   <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
-  <link rel="stylesheet" href="volun-manage.css" />
+  <link rel="stylesheet" href="/Oulim/admin/css/community-manage/post-list.css" />
 </head>
 
 <body>
@@ -41,7 +41,7 @@
       <nav class="sidebar-menu">
         <ul>
           <li class="menu-item">
-            <a href="#">통계</a>
+            <a href="/Oulim/admin/html/dashboard/dashboard.html">통계</a>
           </li>
 
           <!-- 회원관리 -->
@@ -49,32 +49,20 @@
             <a href="#" class="menu-title"> 회원관리 </a>
 
             <ul class="submenu">
-              <li><a href="#">기업회원</a></li>
-              <li><a href="#">회원조회</a></li>
-              <li><a href="#">회원상세</a></li>
+              <li><a href="/Oulim/admin/html/member-manage/company-certification.html">기업회원</a></li>
+              <li><a href="/Oulim/admin/html/member-manage/mem-list.html">회원조회</a></li>
             </ul>
           </li>
 
           <!-- 봉사활동관리 -->
-          <li class="menu-item dropdown">
-            <a href="#" class="menu-title"> 봉사활동관리 </a>
-
-            <ul class="submenu">
-              <li><a href="#">봉사목록</a></li>
-              <li><a href="#">봉사상세</a></li>
-            </ul>
+         <li class="menu-item dropdown">
+            <a href="/Oulim/admin/html/volunteer-manage/volun-list.html" class="menu-title"> 봉사활동관리 </a>
           </li>
 
           <!-- 게시판관리 -->
           <li class="menu-item dropdown">
-            <a href="#" class="menu-title"> 게시판관리 </a>
-
-            <ul class="submenu">
-              <li><a href="#">게시글관리</a></li>
-              <li><a href="#">게시글상세</a></li>
-            </ul>
+            <a href="/Oulim/admin/html/community-manage/post-list.html" class="menu-title"> 게시판관리 </a>
           </li>
-        </ul>
       </nav>
     </aside>
 
@@ -82,35 +70,32 @@
     <div class="search-user">
 
       <div class="header">
-        <h1>봉사관리</h1>
+        <h1>게시글 관리</h1>
       </div>
       <section class="l-content">
         <div id="content-area">
           <select class="search-item">
-            <option>봉사번호</option>
-            <option>신청자 아이디</option>
-            <option>단체명</option>
-            <option>시작일</option>
-            <option>종료일</option>
-            <option>지금포인트</option>
-            <option>진행상태</option>
-            <option>처리</option>
+            <option>게시글 번호</option>
+            <option>닉네임</option>
+            <option>게시글 제목</option>
+            <option>작성일</option>
+            <option>추천수</option>
+            <option>조회수</option>
           </select>
-          <input type="text" class="c-input" placeholder="검색조건">
+          <input type="text" class="c-input" placeholder="검색 조건">
           <button class="c-button c-button--primary c-button--md">조회</button>
         </div>
 
-        <div class="c-list c-list--8col">
+        <div class="c-list c-list--7col">
           <!-- header -->
           <div class="c-list__header">
-            <span class="c-list__col">봉사번호</span>
-            <span class="c-list__col">신청자 아이디</span>
-            <span class="c-list__col">단체명</span>
-            <span class="c-list__col">시작일</span>
-            <span class="c-list__col">종료일</span>
-            <span class="c-list__col">지급 포인트</span>
-            <span class="c-list__col">진행상태</span>
-            <span class="c-list__col">처리</span>
+            <span class="c-list__col">게시글 번호</span>
+            <span class="c-list__col">닉네임</span>
+            <span class="c-list__col">게시글 제목</span>
+            <span class="c-list__col">작성일</span>
+            <span class="c-list__col">추천수</span>
+            <span class="c-list__col">조회수</span>
+            <span class="c-list__col">삭제여부</span>
           </div>
           <!-- body -->
           <div class="c-list__body">
@@ -119,26 +104,23 @@
                 1
               </span>
               <span class="c-list__col">
-                bbb
+                아무개
               </span>
               <span class="c-list__col">
-                봉사만세
+                제목입니다
               </span>
               <span class="c-list__col">
-                23.01.15
+                2023-01-15
               </span>
               <span class="c-list__col">
-                23.01.15
+                11
               </span>
               <span class="c-list__col">
-                2000
-              </span>
-              <span class="c-list__col">
-                진행중
+                1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--secondary c-button--md">
-                  상세보기
+                <button class="c-button c-button--primary c-button--md">
+                  <a href="/Oulim/admin/html/community-manage/post-detail.html">상세보기</a>
                 </button>
               </div>
             </div>
@@ -147,26 +129,23 @@
                 1
               </span>
               <span class="c-list__col">
-                bbb
+                아무개
               </span>
               <span class="c-list__col">
-                봉사만세
+                제목입니다
               </span>
               <span class="c-list__col">
-                23.01.15
+                2023-01-15
               </span>
               <span class="c-list__col">
-                23.01.15
+                11
               </span>
               <span class="c-list__col">
-                2000
-              </span>
-              <span class="c-list__col">
-                진행중
+                1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--secondary c-button--md">
-                  상세보기
+                <button class="c-button c-button--primary c-button--md">
+                  <a href="/Oulim/admin/html/community-manage/post-detail.html">상세보기</a>
                 </button>
               </div>
             </div>
@@ -175,26 +154,23 @@
                 1
               </span>
               <span class="c-list__col">
-                bbb
+                아무개
               </span>
               <span class="c-list__col">
-                봉사만세
+                제목입니다
               </span>
               <span class="c-list__col">
-                23.01.15
+                2023-01-15
               </span>
               <span class="c-list__col">
-                23.01.15
+                11
               </span>
               <span class="c-list__col">
-                2000
-              </span>
-              <span class="c-list__col">
-                진행중
+                1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--secondary c-button--md">
-                  상세보기
+                <button class="c-button c-button--primary c-button--md">
+                  <a href="/Oulim/admin/html/community-manage/post-detail.html">상세보기</a>
                 </button>
               </div>
             </div>
@@ -203,51 +179,48 @@
                 1
               </span>
               <span class="c-list__col">
-                bbb
+                아무개
               </span>
               <span class="c-list__col">
-                봉사만세
+                제목입니다
               </span>
               <span class="c-list__col">
-                23.01.15
+                2023-01-15
               </span>
               <span class="c-list__col">
-                23.01.15
+                11
               </span>
               <span class="c-list__col">
-                2000
-              </span>
-              <span class="c-list__col">
-                진행중
+                1000
               </span>
               <div class="c-list__actions">
-                <button class="c-button c-button--secondary c-button--md">
-                  상세보기
+                <button class="c-button c-button--primary c-button--md">
+                  <a href="/Oulim/admin/html/community-manage/post-detail.html">상세보기</a>
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div style="width: 900px; margin:50px;">
-          <!-- 페이지네이션  c-pagination-->
-          <nav class="c-pagination">
-            <a class="c-pagination__link is-disabled">‹‹</a>
-            <a class="c-pagination__link is-disabled">‹</a>
-            <a class="c-pagination__link is-active">1</a>
-            <a class="c-pagination__link">2</a>
-            <a class="c-pagination__link">3</a>
-            <a class="c-pagination__link">4</a>
-            <a class="c-pagination__link">5</a>
-            <a class="c-pagination__link">6</a>
-            <a class="c-pagination__link">7</a>
-            <a class="c-pagination__link">8</a>
-            <a class="c-pagination__link">9</a>
-            <a class="c-pagination__link">10</a>
-            <a class="c-pagination__link">›</a>
-            <a class="c-pagination__link">››</a>
-          </nav>
-        </div>
       </section>
+      <div class="page">
+        <!-- 페이지네이션  c-pagination-->
+        <nav class="c-pagination">
+          <a class="c-pagination__link is-disabled">‹‹</a>
+          <a class="c-pagination__link is-disabled">‹</a>
+          <a class="c-pagination__link is-active">1</a>
+          <a class="c-pagination__link">2</a>
+          <a class="c-pagination__link">3</a>
+          <a class="c-pagination__link">4</a>
+          <a class="c-pagination__link">5</a>
+          <a class="c-pagination__link">6</a>
+          <a class="c-pagination__link">7</a>
+          <a class="c-pagination__link">8</a>
+          <a class="c-pagination__link">9</a>
+          <a class="c-pagination__link">10</a>
+          <a class="c-pagination__link">›</a>
+          <a class="c-pagination__link">››</a>
+        </nav>
+      </div>
     </div>
   </main>
 
