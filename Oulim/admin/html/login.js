@@ -10,6 +10,9 @@ const userPw = document.getElementById("userPw");
 const errorBox = document.getElementById("is-user-login-error");
 const errorText = errorBox.querySelector("span");
 
+// const loginButton = document.getElementsByClassName(".c-button");
+
+// 비밀번호 입력 확인 온 오프
 pwEye.addEventListener("click", function(){
   if (userPw.type === "password") {
     userPw.type = "text";
@@ -19,6 +22,8 @@ pwEye.addEventListener("click", function(){
     pwEye.src = "/Oulim/asset/image/user/password-off.png";
   }
 });
+
+// 로그인 정보 채우지 않을시 경고 메세지
 
 loginForm.addEventListener("submit", function(e){
   let message = "";
@@ -38,7 +43,7 @@ loginForm.addEventListener("submit", function(e){
 
   }
 });
-
+// 입력시 경고 메세지 사라짐
 userName.addEventListener("input", function(){
   errorBox.style.display = "none";
 });
@@ -48,3 +53,7 @@ userPw.addEventListener("input", function(){
 });
 
 
+// loginButton.addEventListener("click", function(){
+
+//   location.href="/Oulim/admin/html/dashboard/dashboard.html";
+// });
