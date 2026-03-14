@@ -12,88 +12,107 @@ body {
 /* 사이드바 */
 
 aside {
-  width: 300px;
-  background: #51af01;
-  color: white;
+    width: 1 200px;
+    background-color: #3E7D08;
+    color: white;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+
 }
+
 
 /* 관리자 영역 */
 
 .adminnow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
 
-  padding: 20px;
-  margin-bottom: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
 }
+
 
 /* 메뉴 기본  */
 
 .sidebar-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  border: 1px solid black;
+    /* border: 1px solid black; */
+
 }
+
 
 /* 메뉴 아이템 */
 
 .menu-item {
-  border-bottom: 3px solid rgb(191, 191, 191);
+    border-bottom: 3px solid rgb(191, 191, 191);
+
+
 }
+
 
 /* 메뉴 링크 */
 
 .menu-title,
 .menu-item a {
-  display: block;
-  width: 100%;
-  padding: 15px 20px;
 
-  color: white;
-  text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
 
-  cursor: pointer;
-  border: 1px solid black;
+    color: white;
+    text-decoration: none;
+
+    cursor: pointer;
+    /* border: 1px solid black; */
+
 }
+
 
 /* hover 효과 */
 
 .menu-item:hover {
-  background: #6dda08;
+    background: #6DDA08;
 }
+
 
 /* 드롭다운 기본 숨김 */
 
 .submenu {
-  display: none;
-  background: #6dda08;
+    display: none;
+    background: #6DDA08;
+
+
 }
+
 
 /* hover 시 드롭다운 열림 */
 
 .dropdown:hover .submenu {
-  display: block;
+    display: block;
 
-  border: 1px solid black;
+    /* border: 1px solid black; */
+
 }
+
 
 /* 서브메뉴 스타일 */
 
 .submenu li a {
-  display: block;
-  padding: 12px 30px;
+    display: block;
+    padding: 12px 30px;
+
 }
 
 .submenu li a:hover {
-  background: #51af01;
+    background: #51AF01;
 
-  border: 1px solid black;
+    border: 1px solid black;
+
 }
 
 /* 메인위에 헤더 */
