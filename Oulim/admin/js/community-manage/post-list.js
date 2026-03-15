@@ -1,5 +1,5 @@
 
-const postDetail = document.querySelectorAll(".c-list__col");
+const postDetail = document.querySelectorAll(".clicktitle");
 
 postDetail.forEach((btn) => {
     btn.addEventListener("click", function(){

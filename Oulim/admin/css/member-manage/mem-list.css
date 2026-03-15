@@ -160,9 +160,9 @@ aside {
   width: 100px;
 }
 
-.c-list--8col .c-list__header,
-.c-list--8col .c-list__row {
-  grid-template-columns: 2cm 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.c-list--6col .c-list__header,
+.c-list--6col .c-list__row {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 /* 페이지 네이션 중간 정렬 */
