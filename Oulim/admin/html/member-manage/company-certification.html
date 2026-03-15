@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
   <link rel="stylesheet" href="/Oulim/admin/css/member-manage/company-certification.css" />
+  <script defer src="/Oulim/admin/js/member-manage/company-certification.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
           </li>
 
           <!-- 봉사활동관리 -->
-         <li class="menu-item dropdown">
+          <li class="menu-item dropdown">
             <a href="/Oulim/admin/html/volunteer-manage/volun-list.html" class="menu-title"> 봉사활동관리 </a>
           </li>
 
@@ -67,13 +68,12 @@
       </nav>
     </aside>
 
-    <!-- 메인 컨텐츠 -->
-    <div class="search-user">
-      <!-- 메인헤더 -->
-      <div class="header">
-        <h1>기업회원관리</h1>
-      </div>
-      <section class="l-content">
+    <!-- 메인 -->
+    <section class="l-content">
+        <!-- 메인헤더 -->
+        <div class="header">
+          <h1>기업회원관리</h1>
+        </div>
         <div id="content-area">
           <p id="company-count">총440</p>
           <div class="bind-button">
@@ -86,19 +86,18 @@
           </div>
         </div>
 
-        <div class="c-list c-list--8col">
+        <div class="c-list c-list--6col">
           <!-- header -->
           <div class="c-list__header">
-            <!-- <label class="c-checkbox"> -->
-            <input type="checkbox" />
-            <!-- <span class="c-checkbox__box"></span> -->
-            <!-- </label> -->
+            <label class="c-checkbox">
+              <input type="checkbox" />
+              <span class="c-checkbox__box"></span>
+            </label>
             <span class="c-list__col">유저번호</span>
             <span class="c-list__col">회사명</span>
             <span class="c-list__col">아이디</span>
             <span class="c-list__col">가입일</span>
             <span class="c-list__col">회사코드</span>
-            <span class="c-list__col">승인</span>
           </div>
           <!-- body -->
           <div class="c-list__body">
@@ -107,252 +106,154 @@
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
+             </div>
+            <div class="c-list__row">
+              <label class="c-checkbox">
+                <input type="checkbox" />
+                <span class="c-checkbox__box"></span>
+              </label>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
             <div class="c-list__row">
               <label class="c-checkbox">
                 <input type="checkbox" />
                 <span class="c-checkbox__box"></span>
               </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
-            </div>
-            <div class="c-list__row">
-              <label class="c-checkbox">
-                <input type="checkbox" />
-                <span class="c-checkbox__box"></span>
-              </label>
-              <span class="c-list__col"> 1 </span>
-              <span class="c-list__col"> 현대자동차 </span>
-              <span class="c-list__col"> aaa </span>
-              <span class="c-list__col"> 2023-01-15 </span>
-              <span class="c-list__col"> 00001 </span>
-              <div class="c-list__actions">
-                <button class="c-button c-button--primary c-button--md">
-                  회원수정
-                </button>
-                <button class="c-button c-button--secondary c-button--md">
-                  회원탈퇴
-                </button>
-              </div>
+              <span class="c-list__col company-detail"> 1 </span>
+              <span class="c-list__col company-detail"> 현대자동차 </span>
+              <span class="c-list__col company-detail"> aaa </span>
+              <span class="c-list__col company-detail"> 2023-01-15 </span>
+              <span class="c-list__col company-detail"> 00001 </span>
             </div>
           </div>
         </div>
+        <div class="page">
+          <!-- 페이지네이션  c-pagination-->
+          <nav class="c-pagination">
+            <a class="c-pagination__link is-disabled">‹‹</a>
+            <a class="c-pagination__link is-disabled">‹</a>
+            <a class="c-pagination__link is-active">1</a>
+            <a class="c-pagination__link">2</a>
+            <a class="c-pagination__link">3</a>
+            <a class="c-pagination__link">4</a>
+            <a class="c-pagination__link">5</a>
+            <a class="c-pagination__link">6</a>
+            <a class="c-pagination__link">7</a>
+            <a class="c-pagination__link">8</a>
+            <a class="c-pagination__link">9</a>
+            <a class="c-pagination__link">10</a>
+            <a class="c-pagination__link">›</a>
+            <a class="c-pagination__link">››</a>
+          </nav>
       </section>
-      <div class="page">
-        <!-- 페이지네이션  c-pagination-->
-        <nav class="c-pagination">
-          <a class="c-pagination__link is-disabled">‹‹</a>
-          <a class="c-pagination__link is-disabled">‹</a>
-          <a class="c-pagination__link is-active">1</a>
-          <a class="c-pagination__link">2</a>
-          <a class="c-pagination__link">3</a>
-          <a class="c-pagination__link">4</a>
-          <a class="c-pagination__link">5</a>
-          <a class="c-pagination__link">6</a>
-          <a class="c-pagination__link">7</a>
-          <a class="c-pagination__link">8</a>
-          <a class="c-pagination__link">9</a>
-          <a class="c-pagination__link">10</a>
-          <a class="c-pagination__link">›</a>
-          <a class="c-pagination__link">››</a>
-        </nav>
-      </div>
-    </div>
   </main>
 
   <!-- Footer 자동 삽입 -->

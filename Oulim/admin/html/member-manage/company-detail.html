@@ -1,11 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dashboard</title>
-  <!-- base css 필수 삽입-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기업회원상세</title>
+
   <link rel="stylesheet" href="/Oulim/asset/css/core/reset.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/core/variable.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/core/Typography.css" />
@@ -18,11 +17,15 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/DetailCard.css" />
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
-  <link rel="stylesheet" href="/Oulim/admin/css//dashboard/dashboard.css" />
-  <script src="/Oulim/admin/js/dashboard/dashboard.js"></script>
-</head>
+  <link rel="stylesheet" href="/Oulim/admin/css/member-manage/company-detail.css" />
+  <script defer src="/Oulim/admin/js/member-manage/company-detail.js"></script>
 
+
+
+</head>
 <body>
+
+
   <!-- Header 자동 삽입 -->
   <!-- <%@ include file="header.jsp" %> -->
 
@@ -68,35 +71,21 @@
       </nav>
     </aside>
 
-    <!-- 메인 컨텐츠 -->
-    <section class="l-content">
 
-      <div class="header">
-        <h1>통계</h1>
-      </div>
+      <!-- 메인헤더 -->
+      <section class="l-content">
+        <div class="header">
+          <h1>기업회원상세</h1>
+        </div>
 
-      <div id="content-area">
-        <P>2026-03-04</P>
-      </div>
-      <div id="content-area">
-        <p>현재 방문자 수 : 1000000</p>
-      </div>
-      <div id="content-area">
-        <P>현재 진행 중인 봉사활동의 수 : 3000</P>
-      </div>
-      <div id="content-area">
-        <P>등록된 기업 회원의 수 : 30</P>
-      </div>
-      <div id="content-area">
-        <P>등록된 일반 회원의 수 : 3000</P>
-      </div>
-    </section>
+      </section>
+
   </main>
-
 
 
   <!-- Footer 자동 삽입 -->
   <!-- <%@ include file="footer.jsp" %> -->
-</body>
 
+  
+</body>
 </html>

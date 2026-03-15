@@ -145,13 +145,3 @@ top:0;
     padding: 30px;
     /* justify-content: center; */
 }
-
-/* 컨텐츠 박스 */
-
-#content-area {
-    background: white;
-    padding: 40px;
-    border-radius: 5px;
-    border: 1px solid black;
-
-}
