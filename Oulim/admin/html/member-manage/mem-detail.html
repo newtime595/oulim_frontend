@@ -19,46 +19,49 @@
   <link rel="stylesheet" href="/Oulim/asset/css/component/badge.css" />
 
   <link rel="stylesheet" href="/Oulim/admin/css/member-manage/mem-detail.css" />
+
+  <script defer src="/Oulim/admin/js/member-manage/mem-detail.js"></script>
+  
 </head>
 
 <body>
   <!-- Header 자동 삽입 -->
   <!-- <%@ include file="header.jsp" %> -->
-
+  
   <main class="l-main">
     <!-- 사이드바 -->
     <aside>
       <!-- 관리자 영역 -->
       <div class="adminnow">
         <img src="" width="40" height="40" />
-
+        
         <button class="c-button c-button--primary c-button--md">
           로그아웃
         </button>
       </div>
-
+      
       <!-- 사이드바 메뉴 -->
       <nav class="sidebar-menu">
         <ul>
           <li class="menu-item">
             <a href="/Oulim/admin/html/dashboard/dashboard.html">통계</a>
           </li>
-
+          
           <!-- 회원관리 -->
           <li class="menu-item dropdown">
             <a href="#" class="menu-title"> 회원관리 </a>
-
+            
             <ul class="submenu">
               <li><a href="/Oulim/admin/html/member-manage/company-certification.html">기업회원</a></li>
               <li><a href="/Oulim/admin/html/member-manage/mem-list.html">회원조회</a></li>
             </ul>
           </li>
-
+          
           <!-- 봉사활동관리 -->
-         <li class="menu-item dropdown">
+          <li class="menu-item dropdown">
             <a href="/Oulim/admin/html/volunteer-manage/volun-list.html" class="menu-title"> 봉사활동관리 </a>
           </li>
-
+          
           <!-- 게시판관리 -->
           <li class="menu-item dropdown">
             <a href="/Oulim/admin/html/community-manage/post-list.html" class="menu-title"> 게시판관리 </a>
@@ -66,30 +69,47 @@
         </ul>
       </nav>
     </aside>
-
-      <!-- 메인 헤더 -->
-      <section class="l-content">
-        <div class="header">
-          <h1>회원상세</h1>
-        </div>
-        <form>
-
-          <div class="main-pw">
-
-            <div class="i-nickname">
-
-              <h5>닉네임</h5>
-              <div class="pw-text">
-                <input id="nickname" type="text" class="c-input" name="nickname" placeholder="닉네임">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
-              </div>
+    
+    <!-- 메인 헤더 -->
+    <section class="l-content">
+      <div class="header">
+        <h1>회원상세</h1>
+      </div>
+      <form>
+        
+        <div class="main-pw">
+          
+          
+          
+          <div class="i-email">
+            
+            <h5>사용자 이름</h5>
+            <div class="pw-text">
+              <input id="email" type="text" class="c-input" name="email" placeholder="사용자 이름">
             </div>
-
-            <p>
+          </div>
+          
+          
+          
+          <h5>아이디</h5>
+          <div class="pw-text">
+            <input id="verify" type="text" class="c-input" name="verify" placeholder="아이디">
+          </div>
+          
+          <div class="i-nickname">
+            
+            <h5>닉네임</h5>
+            <div class="pw-text">
+              <input id="nickname" type="text" class="c-input" name="nickname" placeholder="닉네임">
+              <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
+            </div>
+          </div>
+          
+          <p>
             <div class="c-form-field is-error">
-
+              
               <label class="c-form-field__label">
-                <h5>닉네임</h5>
+                <h5>닉네임 수정</h5>
               </label>
               <div class="pw-text">
                 <input type="text" class="c-input" placeholder="닉네임">
@@ -98,91 +118,38 @@
               <span class="c-form-field__error">
                 존재하는 닉네임입니다.
               </span>
-
-            </div>
-            </p>
-
-            <div class="i-email">
-
-              <h5>이메일</h5>
-              <div class="pw-text">
-                <input id="email" type="text" class="c-input" name="email" placeholder="이메일">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
-              </div>
-            </div>
-
-            <p>
-            <div class="c-form-field is-error">
-
-              <label class="c-form-field__label">
-                <h5>이메일</h5>
-              </label>
-              <div class="pw-text">
-                <input type="text" class="c-input" placeholder="이메일">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
-              </div>
-              <span class="c-form-field__error">
-                존재하는 이메일입니다.
-              </span>
-
-            </div>
-            </p>
-
-            <h5>인증번호</h5>
-            <div class="pw-text">
-              <input id="verify" type="text" class="c-input" name="verify" placeholder="이메일 인증번호 입력">
-              <button class="c-button c-button--primary c-button--md">인증확인</button>
-            </div>
-
-            <p>
-            <div class="c-form-field is-error">
-
-              <label class="c-form-field__label">
-                <h5>인증번호</h5>
-              </label>
-              <div class="pw-text">
-                <input type="email" class="c-input" placeholder="이메일 인증번호 입력">
-                <button type="button" class="c-button c-button--primary c-button--md">중복확인</button>
-              </div>
-              <span class="c-form-field__error">
-                인증번호가 일치하지 않습니다.
-              </span>
-
-            </div>
-            </p>
-
-            <h5>비밀번호 수정</h5>
-            <div class="pw-text">
               
-              <input type="password" class="c-input" name="new-password" placeholder="새 비밀번호 입력">
-              <button type="button" id="c-password-btn-toggle"><img src="/Oulim/asset/image/user/password-off.png" alt="eye" id="c-password-toggle-img" /></button>
             </div>
-
-            <h5>비밀번호 재확인</h5>
-            <div class="pw-text">
-              <input type="password" class="c-input" name="new-password-check" placeholder="비밀번호 확인">
-              <button type="button" id="c-password-btn-toggle-2"><img src="/Oulim/asset/image/user/password-off.png" alt="eye" id="c-password-toggle-2-img" /></button>
-            </div>
-
+          </p>
+          
+          <div class="i-email">
+            
             <h5>주소</h5>
             <div class="pw-text">
-              <input type="text" class="c-input" name="address" placeholder="주소 추가하기">
-              <button class="c-button c-button--primary c-button--md">주소검색</button>
+              <input id="email" type="text" class="c-input" name="email" placeholder="주소">
+              <button type="button" class="c-button c-button--primary c-button--md">돋보기그림</button>
             </div>
-
           </div>
-
-          <div class="c-button-group">
-            <button id="accept" class="c-button c-button--primary c-button--md">수정</button>
-            <button id="cancel" class="c-button c-button--secondary c-button--md">취소</button>
+          
+          <h5>포인트</h5>
+          <div class="pw-text">
+            <input type="text" class="c-input" name="address" placeholder="포인트">
+            <button class="c-button c-button--primary c-button--md point-count" >포인트 상세내역 보기</button>
           </div>
-
-        </form>
-      </section>
+          
+        </div>
+        
+        <div class="c-button-group">
+          <button id="accept" class="c-button c-button--primary c-button--md">수정</button>
+          <button id="cancel" class="c-button c-button--secondary c-button--md">탈퇴</button>
+        </div>
+        
+      </form>
+    </section>
   </main>
 
-
-
+  
+  
   <!-- Footer 자동 삽입 -->
   <!-- <%@ include file="footer.jsp" %> -->
 </body>
