@@ -40,7 +40,6 @@ body {
 /* 비밀번호 박스안 eye img 고정 */
 .pw-box-layout {
   position: relative;
-
 }
 
 #c-password-btn-toggle {
@@ -48,7 +47,7 @@ body {
   width: 22px;
   height: 22px;
   right: 13px;
-  top: +12px;
+  top: 12px;
   /* top: -12px; */
 }
 
@@ -57,4 +56,3 @@ body {
 /* height: 100%; */
 /* object-fit: cover; */
 /* opacity: 0.4; */
-}
